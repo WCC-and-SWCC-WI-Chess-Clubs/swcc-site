@@ -1,9 +1,12 @@
 # swcc
 Southwest Chess Club website
 
-* review index.html
+* review index.html (move home.html into this)
+* each file called new_xxxxx.html should be stand-alone rather than loaded into index.html
+* each stand-alone file should load menu.html and footer.html
+* 
 * add border to all TD elements (to show structure)
-* how the javascript loads all the other files
+* 
 * each file can be independently viewed/edited
 * advantages of using a single css file 
 	* change font to Arial
