@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv=Content-Type content="text/html" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/new_swcc.css?t=20250910">
+    <script type='text/javascript' language='javascript' src='js/jquery-3.4.1.min.js'>
+        <!-- yes, this comment is here on purpose -->
+    </script>
+    <script type='text/javascript' language='javascript' src='js/swcc.js'><!-- comment required --></script>
+    <title>Southwest Chess Club -- Home Page</title>
+</head>
+
+<body id='body-container' link="#0066FF" vlink="#6633CC">
+<div id='main-container'>
+    <script>
+        const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        $(function () {
+			// if (isDarkMode) {
+	        //     $("#title").load("headerw.html");
+			// } else {
+	        //     $("#title").load("headerb.html");
+			// }
+            $("#menu").load("menu.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <table id="swccLayout">
+        <tr><td id="tdHeader" colspan="2"></td></tr>
+        <tr>
+            <td id="tdContentLeft">
+                <div>
+                    <img id="swccLogo" src="images/swcc-logo.jpg" onclick="javascript:window.location='index.html';">
+                    <div id='menu'></div>
+                </div>
+            </td>
+            <td id="tdContentRight">
+                <div id="divContent">
+                <!-- START: Add page content below this comment -->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:13pt;
+	font-family:"Arial";
+	mso-fareast-font-family:"Arial";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:13pt;
+	font-family:"Arial";
+	mso-fareast-font-family:"Arial";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:13pt;
+	font-family:"Arial";
+	mso-fareast-font-family:"Arial";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:"Arial";
+	mso-fareast-font-family:"Arial";
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:14.0pt;
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:13.0pt;
+	font-family:"Arial";
+	mso-fareast-font-family:"Arial";}
+span.zzmpTrailerItem
+	{mso-style-name:zzmpTrailerItem;
+	mso-ansi-font-size:13.0pt;
+	font-family:"Arial";
+	mso-ascii-font-family:"Arial";
+	mso-hansi-font-family:"Arial";
+	mso-bidi-font-family:"Arial";
+	font-variant:normal !important;
+	color:windowtext;
+	mso-text-animation:none;
+	mso-hide:none;
+	text-transform:none;
+	position:relative;
+	top:0pt;
+	mso-text-raise:0pt;
+	letter-spacing:0pt;
+	text-shadow:none;
+	text-effect:none;
+	text-effect:none;
+	font-weight:normal;
+	font-style:normal;
+	mso-no-proof:yes;
+	text-decoration:none;
+	text-underline:none;
+	text-decoration:none;
+	text-line-through:none;
+	vertical-align:baseline;}
+ /* Page Definitions */
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:-132;
+	mso-list-type:simple;
+	mso-list-template-ids:410287362;}
+@list l0:level1
+	{mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:-131;
+	mso-list-type:simple;
+	mso-list-template-ids:-1926321066;}
+@list l1:level1
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:-130;
+	mso-list-type:simple;
+	mso-list-template-ids:919136482;}
+@list l2:level1
+	{mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:-129;
+	mso-list-type:simple;
+	mso-list-template-ids:-877919594;}
+@list l3:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:-128;
+	mso-list-type:simple;
+	mso-list-template-ids:1181548520;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:-127;
+	mso-list-type:simple;
+	mso-list-template-ids:1253870300;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:-126;
+	mso-list-type:simple;
+	mso-list-template-ids:96777164;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l7
+	{mso-list-id:-125;
+	mso-list-type:simple;
+	mso-list-template-ids:-648653042;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l8
+	{mso-list-id:-120;
+	mso-list-type:simple;
+	mso-list-template-ids:-351491534;}
+@list l8:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l9
+	{mso-list-id:-119;
+	mso-list-type:simple;
+	mso-list-template-ids:-1907195632;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:13.0pt;
+	font-family:"Arial";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+
+<div class="Section1">
+
+<p class="MsoBodyText" style="text-align:center" align="center"><b><u><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt">SOUTHWEST CHESS CLUB<br>
+DVDs (25)/CDs (3) Available to Rent<o:p></o:p></span></u></b></p>
+
+<p class="MsoBodyText"><u><span style="font-size:14.0pt;mso-bidi-font-size:12.0pt">See
+Robin Grochowski for Rental</span></u><span style="font-size:14.0pt;mso-bidi-font-size:
+12.0pt"> </span>(requested tape will be brought in the following week)<u><span style="font-size:14.0pt;mso-bidi-font-size:12.0pt"> <o:p></o:p></span></u></p>
+
+<p class="MsoBodyText"><b>DVD/CD COST:<span style="mso-spacerun:yes">&nbsp;
+</span>$3.00 for a 3-week rental<o:p></o:p></b></p>
+
+<p class="MsoBodyText"><b><u>DVDs</u>:<o:p></o:p></b></p>
+
+<p class="MsoBodyText"><b style="mso-bidi-font-weight:normal">The …a6 Slav</b>,
+by GM James Plaskett (85 minutes):<br>
+The ...a6 Slav may be a relative newcomer to the world scene but Shirov, Anand
+and Sokolov have already refined it into a vicious weapon.<span style="mso-spacerun:yes">&nbsp; </span>In this video GM James Plaskett unveils a
+host of fiendish but subtle ideas to derail your opponents.<span style="mso-spacerun:yes">&nbsp; </span>A little move with a sting in the tail!</p>
+
+<p class="MsoBodyText">Part 1: 5.e3<br>
+Part 2: 5.g3<br>
+Part 3: 5.c5<br>
+Part 4: 5.Bg5 <br>
+Part 5: 5.Qb3 Part 6: 5.a4<span style="mso-spacerun:yes">&nbsp; </span>Part: 7
+5.cxd5 Part 8: 5.Ne5</p>
+
+<p class="MsoBodyText"><b style="mso-bidi-font-weight:normal">Queen’s Gambit</b>,
+by IM Andrew Martin (90 minutes):<br>
+An enterprising repertoire for White against the Queen’s Gambit Declined, Slav
+and Tarrasch. Based on dangerous attacking schemes in the Exchange Variation.
+White’s clear-cut strategy makes these lines unique in their effectiveness at
+both GM and club level. </p>
+
+<p class="MsoBodyText">Part 1: 3...Nf6<br>
+Part 2: 3...Be7 <br>
+Part 3: 3...c6<br>
+Part 4: 3...c5</p>
+
+<span style="font-size:13.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA"><br style="page-break-before:always" clear="all">
+</span>
+
+<p class="MsoBodyText" style="text-align:center" align="center"><b><u>Roman’s Lab:
+Mastering Chess Series DVDs<br>
+by two-time <st1:country-region w:st="on"><st1:place w:st="on">U.S.</st1:place></st1:country-region>
+Champion Grandmaster Roman Dzhindzhikhashvili</u></b>:</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><b style="mso-bidi-font-weight:normal">Volume 1:<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><u>Learning
+Openings the Easy Way, Traps &amp; Novelties</u>.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>Features the first five
+lessons of GM Roman Dzhindzhikhasvili's Mastering Chess Series:<span style="mso-spacerun:yes">&nbsp; </span>Lesson 1:<span style="mso-spacerun:yes">&nbsp;
+</span>Learning Openings the Easy Way: Guide to worry-free openings, based on
+understanding rather than a memory contest; Lesson 2: Avoiding &amp; Creating
+Opening Traps -- the secrets to avoiding and creating opening traps without
+damaging your position; Lesson 3: Dangers &amp; Advantages of Choosing Sharp
+Openings -- tactics you can’t live without in sharp modern openings; Lesson 4:
+Punishment for Delaying Development in the Opening -- punishment meted out for
+typical materialist at the expense of development; and Lesson 5: Creating
+Opening Novelties -- Important updates on a number of novelties introduced in
+previous Roman Forum tapes. </p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>Roman covers the
+following openings on this DVD: Caro-Kann, Ruy Lopez, Benko Gambit, Tarrasch
+Defense, Sicilian Defense, Accelerated Dragon, Queen’s Gambit Declined, English
+Defense, Scotch Gambit, Nimzo-Indian and more!</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><b style="mso-bidi-font-weight:normal">Volume 2:<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><u>Sacrifices,
+Tactics &amp; Traps that End Games in the Opening</u>.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>Lesson 6: Ambitious
+Approach to Critical Opening Positions; Lesson 7: Positional Sacrifice in the
+Opening, Part 1; Lesson 8: Positional Sacrifice in the Opening, Part 2; Lesson
+9: Powerful Tactics in the Opening, Part 1; and Lesson 10: Powerful Tactics in
+the Opening, Part 2.</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>Roman covers the
+following openings on this DVD: Caro-Kann, Accelerated Dragon, Queen's Gambit
+Accepted, English, Advanced French, Scotch Gambit, Gruenfeld, King's Indian
+Saemisch, King's Indian Four Pawns Attack, Ruy Lopez, Marshall Gambit,
+Smith-Morra Gambit, Najdorf Sicilian and much more!</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><b style="mso-bidi-font-weight:normal">Volume 3:<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><u>Transition
+to the Middle Game</u>.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>Lesson 11: Designing
+Sicilian Assaults from the Opening; Lesson 12: Building Attacking Positions
+from the Opening, Part 1; Lesson 13: Building Attacking Positions from the
+Opening, Part 2; Lesson 14: The Importance of Planning for Pawn Structure in
+the Opening, Part 1; Lesson 15: The Importance of Planning for Pawn Structure
+in the Opening, Part 2.</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><b style="mso-bidi-font-weight:normal">Volume 5:<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><u>Rapid
+and Complete Opening Repertoire for the Tournament Player for White</u>.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>Opening Lines covered on
+this DVD: Queens Gambit Accepted &amp; Declined, Queens Indian Defense, Slav
+Defense, Albin Counter Gambit, Nimzo-Indian Defense, Kings Indian Defense, Grunfled
+Defense, Dutch Defense (Nc6 &amp; Bf5 lines), and Benko Gambit. <span style="mso-spacerun:yes">&nbsp;</span>This DVD was designed for the player who does
+not want to spend a lot of time studying and still achieve good results.</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><b style="mso-bidi-font-weight:normal">Volume 6:<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><u>Rapid
+and Complete Opening Repertoire for the Tournament Player for Black</u>.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>Your study time will be
+cut dramatically as Roman give you the best and most solid responses for Black.
+<span style="mso-spacerun:yes">&nbsp;</span>Based on his own games Roman recommends
+solid active lines to meet e4, d4, c4, and Nf3. <span style="mso-spacerun:yes">&nbsp;</span>Your study time will be cut dramatically as
+Roman gives you the best and most solid responses for BLACK. <span style="mso-spacerun:yes">&nbsp;</span>This video was designed for the player who
+does not want to spend a lot of time studying and still achieve good results. <span style="mso-spacerun:yes">&nbsp;</span>For lines against e4 Roman recommends d6, Nf6,
+and e5. <span style="mso-spacerun:yes">&nbsp;</span>There is very little theory to
+remember. <span style="mso-spacerun:yes">&nbsp;</span>Solid and active positions. <span style="mso-spacerun:yes">&nbsp;</span>Against the Queens Gambit, Roman recommends
+the Nimzo-Indian Defense. <span style="mso-spacerun:yes">&nbsp;</span>Roman also
+gives you his best lines to meet The English, Trompowski, and Nf3. Recommended
+lines are safe active lines to get you into a comfortable Middle Game.</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><b style="mso-bidi-font-weight:normal">Volume 8:<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><u>Comprehensive
+Chess Endings (Part 1)</u>.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>GrandMaster Roman
+Dzindzichashvili, former two-time US &amp; Russian Champion, and chess
+coach/trainer for world champions Gary Kasparov &amp; Anatoly Karpov, shows you
+how to play for a win or draw in a number of types of end games.<span style="mso-spacerun:yes">&nbsp; </span>Roman recommends that you learn and
+understand the end game so you will know ahead of time whether it is won, lost
+or drawn.<span style="mso-spacerun:yes">&nbsp; </span>These lessons by Roman will
+help you determine whether you should go into the endgame or avoid it. </p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>Lessons in Volume 8:
+King and Pawn Endings, More King and Pawn Endings, Practical Rook and Pawn
+Endings, Tactical Rook Endings, Basic Principles of Minor Piece Endings, and
+Queen and Pawn Endings.</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><b style="mso-bidi-font-weight:normal">Volume 9:<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><u>Comprehensive
+Chess Endings (Part 2)</u>.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>Lessons in Volume 9:
+Queen v. King &amp; Pawn, Queen v. Rook, Queen v. Knight &amp; Bishop, Rook v.
+2 Pawns, Rook &amp; Pawn v. Bishop &amp; Pawn, Rook &amp; Pawn v. Bishop &amp;
+Knight, Pawn &amp; Bishop v. 2 Rooks.<span style="mso-spacerun:yes">&nbsp; </span></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><b style="mso-bidi-font-weight:normal">Volume 11:<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span><u>Greatest
+Games of Chess ever Played (Part 2)</u>.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>Roman selects and
+analyzes 7 of the greatest games ever played by the top world-class players.
+The criteria for selection of these positional and tactical masterpieces was a
+high level of resistance for both sides and how the game contributed to the
+history of chess.<span style="mso-spacerun:yes">&nbsp; </span>Spassky v. Karpov;
+Smyslov v. Reshevsky; Fischer v. Spassky; Tal v. Portisch; Kasparov v. Topalov;
+Larsen v. Spassky; Beliavsky v. Kasparov.</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><b style="mso-bidi-font-weight:normal">Volume 12:<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span><u>New
+Improvements in Opening Theory for the Competitive Tournament Player</u>.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>This DVD is for the
+ambitious player who never wants to be without an excellent response when
+meeting some of White’s most solid openings.</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>Openings covered: <br>
+Accelerated Dragon <br>
+Closed Sicilian with g3<br>
+Bogo Indian 6.Nc3<br>
+Nimzo Indian 4. a3<br>
+Nimzo Indian 4. f3<br>
+Nimzo Indian 4. Qc2<br>
+Nimzo Indian 4. Bg5 <st1:place w:st="on"><st1:city w:st="on">Leningrad</st1:city></st1:place><br>
+Nimzo Indian 4. e3</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><b style="mso-bidi-font-weight:normal">Volume 13:<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span><u>Maximize
+your Opening Success with Black for the Ambitious Tournament Player Against 1.b4,
+1.c4, 1.d4 and 1.f4</u>.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>Roman recommends his own
+solid but ambitious lines to confront some of White’s most solid and unsound
+openings. These lines will allow you get the most out of the opening and
+achieve a higher success rate.</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>Openings covered: <br>
+Blackmar Diemer Gambit <br>
+Bird’s Opening <br>
+Colle System <br>
+English Opening <br>
+London System <br>
+Orang-Utan (Sokolsky) Opening <br>
+Torre/Trompowski</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><b style="mso-bidi-font-weight:normal">Volume 14:<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span><u>Improve
+your Combinational Preparation and Tactical Skills (Part 1)</u>.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>With Roman's help, you
+will have the ability to recognize tactical themes, patterns and combinations,
+enabling you to use them to win your own games. <span style="mso-spacerun:yes">&nbsp;</span>Roman will guide you through a variety of
+different themes, mating nets and opening sacrifices that will materialize out
+of nowhere. <span style="mso-spacerun:yes">&nbsp;</span></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>Featured topics include:
+Thematic combinations, intuition, pattern recognition, most unusual
+combinations, combinations in the opening in the Caro-Kann, Dutch and Grunfeld.
+<span style="mso-spacerun:yes">&nbsp;</span>Roman's best combinational and tactical
+game ever.</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><b style="mso-bidi-font-weight:normal">Volume 15:<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span><u>Improve
+your Combinational Preparation and Tactical Skills (Part 2)</u>.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>Featured topics include:
+Multiple thematic combinations in the Nimzo Indian, Unexpected tactical shots
+in the Scotch, Thematic counter combinations in the Ruy Lopez, Complex
+combination in the English, Unusual endgame tactics and combinations and quiet
+tactical moves.</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><b style="mso-bidi-font-weight:normal">Volume 16:<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span><u>Learn
+to Play the English Opening the Easy Way</u>.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>Roman will teach you the
+unique way he plays White’s most solid and easy-to-learn repertoire. <span style="mso-spacerun:yes">&nbsp;</span>Complex theory and variations are replaced
+with easy-to-learn plans and strategies that will teach you how to achieve good
+positions against all of Black’s responses. <span style="mso-spacerun:yes">&nbsp;</span>The DVD also includes a free PGN game file of
+games played by Roman with the English Opening, along with a free Bookup
+Express program to help you analyze and study them.</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><b style="mso-bidi-font-weight:normal">Volume 17:<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span><u>Unbeatable
+Secret Weapons for Black</u>.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>Roman gives you 2 of his
+secret opening weapons:</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>The New Revolutionary
+Sicilian:<span style="mso-spacerun:yes">&nbsp; </span>Roman has beaten the top
+players in the world with this unknown variation of the Sicilian.<span style="mso-spacerun:yes">&nbsp; </span>This is a tested powerful line and gives
+Black an advantage in the opening.<span style="mso-spacerun:yes">&nbsp; </span>Move
+order 1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Bg5 g6!! </p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>The Scandinavian
+...Nf6:<span style="mso-spacerun:yes">&nbsp; </span>A forgotten opening, solid and a
+great surprise weapon.<span style="mso-spacerun:yes">&nbsp; </span>This opening
+according to Roman is as good as the French, Caro-Kann, and some variations of
+the Sicilian.</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><b style="mso-bidi-font-weight:normal">Volume 18:<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span><u>Blitz
+as a Tool to Better Chess &amp; Secrets in Beating your Chess Computer Program</u>.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>There is little
+information on how to improve your Blitz Chess game.<span style="mso-spacerun:yes">&nbsp; </span>Roman has had a blitz rating as high as 3450
+on the Internet Chess Club and will pass his knowledge on to you on how blitz
+is played on the highest level.<span style="mso-spacerun:yes">&nbsp; </span>He
+recommends ideas and openings to improve your Blitz game which will also help
+you improve your over the board skills.</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>When it comes to Secrets
+in beating your Chess Computer Programs, Roman is one of the best grandmasters
+in the world and has even helped programmers improves flaws in their own
+programs.<span style="mso-spacerun:yes">&nbsp; </span>Computer Programs can look at
+millions of positions a second.<span style="mso-spacerun:yes">&nbsp; </span>Roman
+recommends and gives you ideas on how to give your computer positions where
+there is nothing to calculate.<span style="mso-spacerun:yes">&nbsp; </span>This will
+help you level the playing field, since most humans understand weak pieces and
+closed positions better than computers.<span style="mso-spacerun:yes">&nbsp;
+</span>Roman will help you with a plan to exploit these weaknesses.</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><b style="mso-bidi-font-weight:normal">Volume 19:<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span><u>Understanding
+and Dominating your Chess Game with Pawn Structures</u>.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>Pawn structures are
+involved in all aspects of your chess game and re the most important part of
+strategic planning. <span style="mso-spacerun:yes">&nbsp;</span>Roman will guide you
+through all the various pawn structures and by understanding pawn structures
+you will be able to achieve better positions and dominate your chess games.</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><b style="mso-bidi-font-weight:normal">Volume 20:<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span><u>Step
+by Step Essential Maneuvering in Closed Positions</u>.<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span>Roman will take you step
+by step through several highly instructional games by the master of positional
+maneuvering, the late former world champion Tigran Petrosian. <span style="mso-spacerun:yes">&nbsp;</span>In order to achieve a higher level in chess it
+is essential to have maneuvering skills, planning, and the understanding of
+each position. <span style="mso-spacerun:yes">&nbsp;</span>Roman will teach you the
+skills you need to master the art of positional maneuvering in closed
+positions.</p>
+
+<p class="MsoBodyText"><b style="mso-bidi-font-weight:normal">Volume 26:<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span><u>Nimzowitsch’s My System, Part 1</u>:<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in">This is the first DVD of a
+two-part DVD set containing a total of approximately 4 hours of instruction
+based on Nimzowitch’s classic “My System” which is the foundation for modern
+day progressive thinking. <span style="mso-spacerun:yes">&nbsp;</span>Roman will
+help you understand Nimzowitch’s ideas and theories while adding 75 years of
+improvements, updates, and changes. <span style="mso-spacerun:yes">&nbsp;</span>Roman
+will cover both positional and tactical examples, bringing to life one of the
+most popular -- and instructive -- books ever published.</p>
+
+<p class="MsoBodyText"><b style="mso-bidi-font-weight:normal">Volume 27:<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span><u>Nimzowitsch’s My System, Part 2</u>:<o:p></o:p></b></p>
+
+<p class="MsoBodyText" style="margin-left:1.0in">This is the second DVD of a
+two-part DVD.</p>
+
+<span style="font-size:13pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA"><br style="mso-special-character:line-break;
+page-break-before:always" clear="all">
+</span>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoBodyText"><b><u>Roman’s Encyclopedia of 40 Essential Chess Openings</u></b>:<span style="mso-spacerun:yes">&nbsp; </span>4-DVD set, Roman’s Encyclopedia of 40
+Essential Chess Openings. <span style="mso-spacerun:yes">&nbsp;</span>The core ideas
+and principles of play of 40 openings are presented and explained in almost 11
+hours on 4 DVDs. <span style="mso-spacerun:yes">&nbsp;</span>Roman gives you his
+preferred lines for white and black, allowing you to play your chosen lines and
+venture into unfamiliar territory with confidence.</p>
+
+<p class="MsoBodyText"><b style="mso-bidi-font-weight:normal">VOLUME 1:</b><br>
+Alekhine Defense (W&amp;B)<br>
+Beefeater/Dzindzi Indian Defense (B)<br>
+Benko Gambit (W&amp;B)<br>
+Benoni (W)<br>
+Bird (B)<br>
+Blackmar-Diemer Gambit (B)<br>
+Blumenfeld Counter Gambit (W)<br>
+Bogo-Indian Defense (W&amp;B)<br>
+<st1:city w:st="on"><st1:place w:st="on">Budapest</st1:place></st1:city>
+Defense (W)</p>
+
+<p class="MsoBodyText"><b style="mso-bidi-font-weight:normal">VOLUME 2:</b><br>
+Caro-Kann (W&amp;B)<br>
+Colle System (W)<br>
+Czech Benoni Defense (W)<br>
+Dutch Defense (W)<br>
+English Defense (W&amp;B)<br>
+4 Knights Defense (W&amp;B)<br>
+French Defense (W)</p>
+
+<p class="MsoBodyText"><b style="mso-bidi-font-weight:normal">VOLUME 3:<br>
+</b>Giuoco Piano (W&amp;B)<br>
+Gruenfeld Defense (W)<br>
+King’s Gambit (B)<br>
+King’s Indian Defense (W&amp;B) (Classical, Averbakh, Saemisch, Fianchetto, London
+System) Latvian Gambit (W)<br>
+Nimzo-Indian Defense (W&amp;B)<b style="mso-bidi-font-weight:normal"><o:p></o:p></b></p>
+
+<p class="MsoBodyText"><b style="mso-bidi-font-weight:normal">VOLUME 4:</b><br>
+Petroff Defense (W)<br>
+Philidor Defense (W)<br>
+Pirc Defense (W)<br>
+Queen’s Gambit Accepted (W&amp;B)<br>
+Queen’s Gambit Declined (W&amp;B) (Slav Defense, Chigorin's Defense)<br>
+Queen's Indian Defense (W&amp;B)<br>
+Ruy Lopez (B)<br>
+Scotch OPening (B)<br>
+Sicilian Defense (W&amp;B) (Accelerated Dragon, Grand Prix Attack, Maroczy
+Bind)</p>
+
+<p class="MsoBodyText"><b><u>CDs<o:p></o:p></u></b></p>
+
+<p class="MsoBodyText"><b style="mso-bidi-font-weight:normal">Garry Kasparov
+Teaches Chess</b>, Volume 1, about 3 hours, 30 minutes:<br>
+How to play the Queen's Gambit (<u>this is also a DVD</u>).</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><b style="mso-bidi-font-weight:normal">Learn to Play Chess, with Fritz and <st1:city w:st="on"><st1:place w:st="on">Chester</st1:place></st1:city></b>, Volume 1,
+ages 8 and up (beginners CD).</p>
+
+<p class="MsoBodyText" style="margin-left:1.0in;text-indent:-1.0in"><b style="mso-bidi-font-weight:normal">Learn to Play Chess, with Fritz and <st1:city w:st="on"><st1:place w:st="on">Chester</st1:place></st1:city></b>, Volume 2,
+ages 8 and up (beginners CD).</p>
+
+</div>
+                <!-- FINISH: All page content should be above this comment -->
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td id="tdFooter" colspan="2">
+                <div id='footer'></div>
+            </td>
+        </tr>
+    </table>
+</div> <!-- ends main container -->
+</body>
+</html>
