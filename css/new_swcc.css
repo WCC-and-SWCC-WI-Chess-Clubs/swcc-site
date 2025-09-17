@@ -301,7 +301,8 @@ td {
 
 .colSchedule {
 	margin: 0;
-	min-width: 675px;
+	max-width: 675px;
+	min-width: 275px;
 	padding: 1px;
 	text-align: left;
 	vertical-align: top;
