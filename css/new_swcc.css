@@ -310,7 +310,9 @@ td {
 
 .colChallenge {
 	margin: 0;
-	min-width: 450px;
+	max-width: 675px;
+	min-width: 275px;
+	/*min-width: 450px;*/
 	padding: 1px;
 	text-align: left;
 	vertical-align: top;
