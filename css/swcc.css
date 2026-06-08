@@ -118,7 +118,7 @@ img.external {
 
 td {
 	text-align: left;
-	vertical-align: top;
+	/*vertical-align: top;*/
 }
 
 
@@ -278,23 +278,23 @@ td {
 	padding: 2px;
 }
 
-.colSoon {
+table.main td.colSoon {
 	text-align: left;
-	vertical-align: top;
+	vertical-align: center;
 	padding: 5px;
 	width: 50%;
 }
 
-.colSoonl {
+table.main td.colSoonl {
 	text-align: left;
-	vertical-align: top;
+	vertical-align: center;
 	padding: 5px;
 	width: 15%;
 }
 
-.colSoonr {
+table.main td.colSoonr {
 	text-align: left;
-	vertical-align: top;
+	vertical-align: center;
 	padding: 5px;
 	width: 85%;
 }
