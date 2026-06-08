@@ -280,23 +280,23 @@ td {
 
 table.main td.colSoon {
 	text-align: left;
-	vertical-align: center;
+	vertical-align: top;
 	padding: 5px;
-	width: 50%;
+	/*width: 50%;*/
 }
 
 table.main td.colSoonl {
 	text-align: left;
-	vertical-align: center;
+	vertical-align: top;
 	padding: 5px;
-	width: 15%;
+	/*width: 15%;*/
 }
 
 table.main td.colSoonr {
 	text-align: left;
-	vertical-align: center;
+	vertical-align: top;
 	padding: 5px;
-	width: 85%;
+	/*width: 85%;*/
 }
 
 .colSchedule {
