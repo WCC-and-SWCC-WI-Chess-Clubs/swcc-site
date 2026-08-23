@@ -90,7 +90,7 @@ export default function History1Page() {
           paddingTop: '1.25rem', marginTop: '1rem',
         }}>
           Continued in{' '}
-          <a href="/swcc/history2" className="swcc-text-link">
+          <a href="/history2" className="swcc-text-link">
             History Part Two: 2001–2005 →
           </a>
         </p>

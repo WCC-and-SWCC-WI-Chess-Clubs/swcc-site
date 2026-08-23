@@ -463,7 +463,7 @@ export default function History2Page() {
           paddingTop: '1.25rem', marginTop: '1rem',
         }}>
           ← Read{' '}
-          <a href="/swcc/history1" className="swcc-text-link">History Part One: The Early Years</a>
+          <a href="/history1" className="swcc-text-link">History Part One: The Early Years</a>
         </p>
 
       </div>

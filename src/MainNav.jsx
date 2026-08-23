@@ -38,7 +38,7 @@ export default function MainNav({ currentPage, onNavigate }) {
           {/* Real cross-deployment link, not a router Link — this build's
               basename is /swcc/, so a router Link to "/" would only
               bounce back to the SWCC home page, not the actual root site. */}
-          <a href="/" className="swcc-back-link">← ChessMKE.org</a>
+          {/*<a href="/" className="swcc-back-link">← ChessMKE.org</a>*/}
           {isMobile && (
             <button
               onClick={() => setMenuOpen(o => !o)}

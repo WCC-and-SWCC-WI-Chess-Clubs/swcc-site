@@ -523,7 +523,7 @@ export default function BookListPage() {
           </a>{' '}
           and see Chris Wainscott, who will bring in your selection the following week.
           Checkout period is 3 weeks. Also see the{' '}
-          <a href="/swcc/dvds" className="swcc-text-link">DVD &amp; CD list →</a>
+          <a href="/dvds" className="swcc-text-link">DVD &amp; CD list →</a>
         </p>
 
         <input

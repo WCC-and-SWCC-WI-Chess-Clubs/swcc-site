@@ -200,7 +200,7 @@ export default function DVDListPage() {
           brought in the following week. Cost is <strong>$3.00 for a 3-week rental</strong>.
           Click any title to expand its description.
           Also see the{' '}
-          <a href="/swcc/books" className="swcc-text-link">full book list →</a>
+          <a href="/books" className="swcc-text-link">full book list →</a>
         </p>
 
         <section style={{ marginBottom: '3rem' }}>

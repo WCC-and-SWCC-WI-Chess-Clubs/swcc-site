@@ -1,7 +1,7 @@
 // src/App.jsx — Southwest Chess Club (standalone deploy, root of its own webserver)
 import { Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
-import SWCCApp from './swcc/SWCCApp.jsx';
+import SWCCApp from './SWCCApp.jsx';
 
 // This repo builds and deploys ONLY the SWCC site, at the root of its own
 // webserver (vite build --base=/). SWCCApp reads its page from the "*"

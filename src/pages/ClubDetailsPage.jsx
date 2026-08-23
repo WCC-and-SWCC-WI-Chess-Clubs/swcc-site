@@ -90,8 +90,8 @@ export default function ClubDetailsPage() {
             <p style={{ marginBottom: '1rem' }}>
               The club maintains the{' '}
               <strong>Henry R. Meifert Memorial Library</strong> — a large lending library of{' '}
-              <a href="/swcc/books" className="swcc-text-link">chess books</a> and{' '}
-              <a href="/swcc/dvds" className="swcc-text-link">instructional DVDs</a>{' '}
+              <a href="/books" className="swcc-text-link">chess books</a> and{' '}
+              <a href="/dvds" className="swcc-text-link">instructional DVDs</a>{' '}
               available to members for 3-week checkouts. For loans, see Chris Wainscott.
             </p>
             <p>
