@@ -16,7 +16,7 @@
 set -e
 
 DEPLOY="${1:-}"
-AMPLIFY_APP_ID="${AMPLIFY_APP_ID:-}"   # set this (or export it) before using `aws`
+AMPLIFY_APP_ID="d23z0fmfoc7k57"   # set this (or export it) before using `aws`
 AMPLIFY_BRANCH="${AMPLIFY_BRANCH:-production}"
 AWS_PROFILE="${AWS_PROFILE:-swcc}"
 LOCAL_PORT="8080"
@@ -52,9 +52,8 @@ function app_build() {
 # ── Package ───────────────────────────────────────────────────────────
 function app_package() {
     echo "Zipping build/..."
-    mkdir -p dist_pkg
-    rm -f dist_pkg/swcc.zip
-    (cd build && zip -qr ../dist_pkg/swcc.zip .)
+    rm -f dist/swcc.zip
+    (cd build && zip -qr ../dist/swcc.zip .)
 }
 
 # ── Deploy targets ───────────────────────────────────────────────────
@@ -84,10 +83,10 @@ function cmd_aws() {
     JOB_ID=$(echo "$DEPLOY_JSON" | python3 -c "import sys,json; print(json.load(sys.stdin)['jobId'])")
     ZIP_UPLOAD_URL=$(echo "$DEPLOY_JSON" | python3 -c "import sys,json; print(json.load(sys.stdin)['zipUploadUrl'])")
 
-    echo "Uploading dist_pkg/swcc.zip (job $JOB_ID)..."
+    echo "Uploading dist/swcc.zip (job $JOB_ID)..."
     curl -s -w "\nHTTP %{http_code}\n" \
         -H "Content-Type: application/zip" \
-        --upload-file dist_pkg/swcc.zip \
+        --upload-file dist/swcc.zip \
         "$ZIP_UPLOAD_URL"
 
     echo "Starting deployment..."
@@ -107,8 +106,9 @@ function cmd_aws() {
 app_build
 
 case "$1" in
-  local)  cmd_local  ;;
-  docker) cmd_docker ;;
-  aws)    cmd_aws    ;;
-  *)      usage      ;;
+  local)  cmd_local   ;;
+  docker) cmd_docker  ;;
+  aws)    cmd_aws     ;;
+  pkg)    app_package ;;
+  *)      usage       ;;
 esac
