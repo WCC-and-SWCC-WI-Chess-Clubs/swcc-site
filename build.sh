@@ -4,6 +4,7 @@
 #   ./build.sh local         — build + deploy to local nginx at /usr/local/nginx/html/
 #   ./build.sh docker        — build Docker image + run at http://localhost:8080
 #   ./build.sh aws           — build + deploy to AWS Amplify
+#   ./build.sh pkg           — build the distribution zip
 #
 # Docker image:
 #   docker build -t swcc .
@@ -17,16 +18,19 @@ set -e
 
 DEPLOY="${1:-}"
 AMPLIFY_APP_ID="d23z0fmfoc7k57"   # set this (or export it) before using `aws`
-AMPLIFY_BRANCH="${AMPLIFY_BRANCH:-production}"
-AWS_PROFILE="${AWS_PROFILE:-swcc}"
+AMPLIFY_BRANCH="production"
+AWS_PROFILE="swcc"
 LOCAL_PORT="8080"
+NGINX_HTML="${NGINX_HTML:-/usr/local/nginx/html}"
 
 usage() {
-  echo "Usage: $0 [local|docker|aws]"
+  echo "Usage: $0 [local|docker|aws|pkg]"
   echo ""
-  echo "  local   Build frontend and deploy to local nginx (/usr/local/nginx/html)"
+  echo "  clean   Cleans up; you will need to run 'npm install' before building"
+  echo "  local   Build frontend and deploy to local nginx (${NGINX_HTML})"
   echo "  docker  Build fresh Docker image and run it"
   echo "  aws     Build, package, and redeploy to AWS Amplify"
+  echo "  pkg     Build the distribution zip"
   echo ""
   echo "When deploying to AWS, first run:  aws login --profile $AWS_PROFILE"
   echo ""
@@ -50,15 +54,23 @@ function app_build() {
 }
 
 # ── Package ───────────────────────────────────────────────────────────
-function app_package() {
-    echo "Zipping build/..."
-    rm -f dist/swcc.zip
+function cmd_package() {
+    app_build
+    echo "Zipping build/ -> dist/swcc.zip..."
+    rm -rf dist
+    mkdir -p dist
     (cd build && zip -qr ../dist/swcc.zip .)
 }
 
 # ── Deploy targets ───────────────────────────────────────────────────
+function cmd_clean() {
+    rm -rf build
+    rm -rf dist
+    rm -rf node_modules
+}
 function cmd_local() {
-    cp -a build/. /usr/local/nginx/html/
+    app_build
+    cp -a build/. "${NGINX_HTML}"/
     echo "Deployed to local nginx"
 }
 
@@ -73,7 +85,7 @@ function cmd_aws() {
     AMPLIFY_APP_ID="${AMPLIFY_APP_ID:?Need AMPLIFY_APP_ID}"
 
     echo "Creating Amplify deployment..."
-    app_package
+    cmd_package
     DEPLOY_JSON=$(aws amplify create-deployment \
         --app-id "$AMPLIFY_APP_ID" \
         --branch-name "$AMPLIFY_BRANCH" \
@@ -103,12 +115,11 @@ function cmd_aws() {
 # ── Entry point ──────────────────────────────────────────────────────
 [[ $# -ne 1 ]] && usage
 
-app_build
-
 case "$1" in
+  clean)  cmd_clean   ;;
   local)  cmd_local   ;;
   docker) cmd_docker  ;;
   aws)    cmd_aws     ;;
-  pkg)    app_package ;;
+  pkg)    cmd_package ;;
   *)      usage       ;;
 esac

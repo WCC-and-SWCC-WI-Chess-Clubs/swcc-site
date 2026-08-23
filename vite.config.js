@@ -7,6 +7,11 @@ import react from '@vitejs/plugin-react';
 // into BrowserRouter via import.meta.env.BASE_URL in src/main.jsx.
 export default defineConfig({
   plugins: [react()],
+  // Build straight to build/ — dist/ is reserved for packaging output
+  // (swcc.zip), not the raw build artifacts.
+  build: {
+    outDir: 'build',
+  },
   // Vite's built-in asset-extension check is case-sensitive and only
   // matches lowercase "jpg"/"jpeg" — uppercase-extension image files
   // otherwise get treated as JS modules and fail import analysis.
