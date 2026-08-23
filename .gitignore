@@ -2,3 +2,5 @@
 .idea/
 .gitignore
 build
+dist
+node_modules
