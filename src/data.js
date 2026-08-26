@@ -117,7 +117,7 @@ export const PAST_CHAMPIONS = [
 
 export const TOURNAMENTS = {
   '2026': [
-    { name: 'SNOOPY SNAGS A BISHOP', url: 'https://ratings.uschess.org/event/202607090263' },
+    { name: 'Snoopy Snags A Bishop', url: 'https://ratings.uschess.org/event/202607090263' },
     { name: 'Daniel Perelman Memorial', url: 'https://ratings.uschess.org/event/202606180373' },
     { name: 'Hales Corners Challenge XXXVIII', url: 'https://ratings.uschess.org/event/202605160733' },
     { name: 'Hedwig\'S Smothered Mate Swiss', url: 'https://ratings.uschess.org/event/202605140123' },
@@ -162,7 +162,7 @@ export const TOURNAMENTS = {
     { name: 'SWCC Candidate Catfish Swiss', url: 'https://ratings.uschess.org/event/202310266672' },
     { name: 'Hales Corners Challenge XXXIII', url: 'https://ratings.uschess.org/event/202309300722' },
     { name: 'White Shark Sudden Death Swiss', url: 'https://ratings.uschess.org/event/202309289392' },
-    { name: 'Northern Pike Pawn Siwiss', url: 'https://ratings.uschess.org/event/202308314422' },
+    { name: 'Northern Pike Pawn Swiss', url: 'https://ratings.uschess.org/event/202308314422' },
     { name: 'Joe Crothers Memorial Club Championship', url: 'https://ratings.uschess.org/event/202308038802' },
     { name: '2d Daniel Perelman Memorial Swiss', url: 'https://ratings.uschess.org/event/202306225412' },
     { name: 'Knight Goby Swiss', url: 'https://ratings.uschess.org/event/202305250772' },
@@ -203,7 +203,7 @@ export const TOURNAMENTS = {
     { name: 'King Foster\'S Night Without Mate Sw', url: 'https://ratings.uschess.org/event/201912126992' },
     { name: 'Bishop Don\'T Know Schitz Swiss', url: 'https://ratings.uschess.org/event/201910249502' },
     { name: 'Hales Corners Challenge XXX', url: 'https://ratings.uschess.org/event/201910050042' },
-    { name: 'Queen\'S Busch Action Swiss', url: 'https://ratings.uschess.org/event/201909266722' },
+    { name: 'Queen\'s Busch Action Swiss', url: 'https://ratings.uschess.org/event/201909266722' },
     { name: 'Blue Moon Knight Swiss', url: 'https://ratings.uschess.org/event/201909190662' },
     { name: 'Old Style Pawn Dueling Action', url: 'https://ratings.uschess.org/event/201908228962' },
     { name: 'Joe Crothers Memorial Club Championship', url: 'https://ratings.uschess.org/event/201908158162' },
