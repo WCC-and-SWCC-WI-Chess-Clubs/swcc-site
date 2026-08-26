@@ -117,6 +117,7 @@ export const PAST_CHAMPIONS = [
 
 export const TOURNAMENTS = {
   '2026': [
+    { name: 'SNOOPY SNAGS A BISHOP', url: 'https://ratings.uschess.org/event/202607090263' },
     { name: 'Daniel Perelman Memorial', url: 'https://ratings.uschess.org/event/202606180373' },
     { name: 'Hales Corners Challenge XXXVIII', url: 'https://ratings.uschess.org/event/202605160733' },
     { name: 'Hedwig\'S Smothered Mate Swiss', url: 'https://ratings.uschess.org/event/202605140123' },
@@ -216,7 +217,7 @@ export const TOURNAMENTS = {
     { name: 'King Kicking Icehouse Action Swiss', url: 'https://ratings.uschess.org/event/201902074292' },
     { name: 'Pabst Pawn Prowling Swiss', url: 'https://ratings.uschess.org/event/201901240582' },
   ],
-  '2018 and earlier': [
-    { name: 'View full archive on USCF →', url: 'https://ratings.uschess.org/affiliate/A6011047' },
+  '2018': [
+    { name: '\'View full archive on USCF →\'', url: 'https://ratings.uschess.org/affiliate/A6011047' },
   ],
 };

@@ -42,8 +42,6 @@ function app_build() {
     rm -rf build
     echo "Building SWCC site (base=/)..."
     npm run build -- --base=/
-    mkdir -p build
-    cp -a dist/. build/
     # cp -a preserves source file modes, which can be owner-only (e.g. 600)
     # depending on how this repo was checked out. Normalize to world-readable
     # so the webserver's own user (nginx, docker, etc.) can actually serve
