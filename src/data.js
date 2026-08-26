@@ -200,8 +200,8 @@ export const TOURNAMENTS = {
     { name: 'Avengers (rook) Endgame Swiss', url: 'https://ratings.uschess.org/event/202001301702' },
   ],
   '2019': [
-    { name: 'King Foster\'s Night Without Mate Sw', url: 'https://ratings.uschess.org/event/201912126992' },
-    { name: 'Bishop Don\'T Know Schitz Swiss', url: 'https://ratings.uschess.org/event/201910249502' },
+    { name: 'King Foster\'s Night Without Mate Swiss', url: 'https://ratings.uschess.org/event/201912126992' },
+    { name: 'Bishop Don\'t Know Schitz Swiss', url: 'https://ratings.uschess.org/event/201910249502' },
     { name: 'Hales Corners Challenge XXX', url: 'https://ratings.uschess.org/event/201910050042' },
     { name: 'Queen\'s Busch Action Swiss', url: 'https://ratings.uschess.org/event/201909266722' },
     { name: 'Blue Moon Knight Swiss', url: 'https://ratings.uschess.org/event/201909190662' },
