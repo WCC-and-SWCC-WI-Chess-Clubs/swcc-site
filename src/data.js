@@ -68,13 +68,14 @@ export const HC_CHALLENGE = {
 };
 
 export const CURRENT_CHAMPION = {
-  year: '2025',
+  year: '2026',
   event: 'Joe Crothers Memorial Southwest Chess Club Championship',
-  name: 'Evan Seghers',
+  name: 'Scott Haubrich',
 };
 
 // Full champions list, 1993 – present
 export const ALL_CHAMPIONS = [
+  { year: 2026, name: 'Scott Haubrich' },
   { year: 2025, name: 'Evan Seghers' },
   { year: 2024, name: 'Aethelred Templin' },
   { year: 2023, name: 'Andrew Rivedal' },
@@ -108,11 +109,6 @@ export const ALL_CHAMPIONS = [
   { year: 1995, name: 'Sheldon Gelbart' },
   { year: 1994, name: 'Sheldon Gelbart' },
   { year: 1993, name: 'Newton Berry' },
-];
-
-// Keep for backward-compat with HomePage
-export const PAST_CHAMPIONS = [
-  { year: '2025', name: 'Evan Seghers', event: 'Joe Crothers Memorial Championship' },
 ];
 
 export const TOURNAMENTS = {
