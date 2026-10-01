@@ -113,7 +113,7 @@ export const ALL_CHAMPIONS = [
 
 export const TOURNAMENTS = {
   '2026': [
-    { name: 'Cyclops Eye-Opening Action Swiss', url: 'https://ratings.uschess.org/event/202609030263' },
+    { name: 'SWCC Cyclops Eye-Opening Action Swiss', url: 'https://ratings.uschess.org/event/202609030263' },
     { name: 'Joe Crothers Memorial Club Championship', url: 'https://ratings.uschess.org/event/202608270163' },
     { name: 'Snoopy Snags A Bishop', url: 'https://ratings.uschess.org/event/202607090263' },
     { name: 'Daniel Perelman Memorial', url: 'https://ratings.uschess.org/event/202606180373' },
@@ -148,7 +148,7 @@ export const TOURNAMENTS = {
     { name: '2024 - Perelman Memorial', url: 'https://ratings.uschess.org/event/202406062932' },
     { name: 'Dodge The Queen Swiss', url: 'https://ratings.uschess.org/event/202405095622' },
     { name: 'Hales Corners Challenge XXXIV', url: 'https://ratings.uschess.org/event/202405042832' },
-    { name: 'SWCC Lamborghini Lightning Action S', url: 'https://ratings.uschess.org/event/202404115392' },
+    { name: 'SWCC Lamborghini Lightning Action Swiss', url: 'https://ratings.uschess.org/event/202404115392' },
     { name: 'Porsche Pawns Swiss', url: 'https://ratings.uschess.org/event/202403212362' },
     { name: 'Focus On Your Game Swiss', url: 'https://ratings.uschess.org/event/202402224072' },
     { name: 'King Impala Swiss', url: 'https://ratings.uschess.org/event/202401256402' },
