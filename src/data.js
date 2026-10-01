@@ -113,6 +113,7 @@ export const ALL_CHAMPIONS = [
 
 export const TOURNAMENTS = {
   '2026': [
+    { name: 'Cyclops Eye-Opening Action Swiss', url: 'https://ratings.uschess.org/event/202609030263' },
     { name: 'Joe Crothers Memorial Club Championship', url: 'https://ratings.uschess.org/event/202608270163' },
     { name: 'Snoopy Snags A Bishop', url: 'https://ratings.uschess.org/event/202607090263' },
     { name: 'Daniel Perelman Memorial', url: 'https://ratings.uschess.org/event/202606180373' },
@@ -215,6 +216,6 @@ export const TOURNAMENTS = {
     { name: 'Pabst Pawn Prowling Swiss', url: 'https://ratings.uschess.org/event/201901240582' },
   ],
   '2018': [
-    { name: 'View full archive on USCF ', url: 'https://ratings.uschess.org/affiliate/A6011047' },
+    { name: 'View full archive on USCF', url: 'https://ratings.uschess.org/affiliate/A6011047' },
   ],
 };
