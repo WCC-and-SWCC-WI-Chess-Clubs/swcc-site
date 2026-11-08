@@ -292,7 +292,7 @@ export default function HomePage({ onNavigate, theme, onThemeChange }) {
                 { label: 'King Registration (WI Tournaments)', url: 'https://www.kingregistration.com/tournaments/state/WI' },
                 { label: 'Wisconsin Chess Association', url: 'https://wischess.org/' },
                 { label: 'US Chess Federation', url: 'http://www.uschess.org/' },
-                { label: 'Waukesha Chess Club', url: '/wcc' },
+                { label: 'Waukesha Chess Club', url: 'https://www.waukeshachessclub.com' },
               ].map((link, i) => (
                 <div
                   key={i}
